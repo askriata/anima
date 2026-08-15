@@ -3,7 +3,7 @@ const router = express.Router();
 const { supabaseAdmin } = require('../lib/supabaseClient');
 const { requireAuth } = require('../middleware/auth');
 
-const VALID_TYPES = ['anime', 'manga', 'light_novel', 'visual_novel', 'manhwa', 'manhua', 'webcomic'];
+const VALID_TYPES = ['anime', 'manga', 'light_novel', 'visual_novel'];
 
 // A single reusable select string that pulls in genres/studios/stats via
 // Postgres joins -- this replaces what used to require separate populate
